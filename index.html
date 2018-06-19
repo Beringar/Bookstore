@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>BERINGAR UBIQUM BOOKSTORE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,300i,400,500,600,700,800,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+
+	<!--
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+-->
+
+
+</head>
+
+<body>
+
+	<div class="container-fluid mainwrapper">
+		<div class="row">
+			<div class="col-sm-12">
+
+				<div class="logo">
+					<img src="img/bookstoreubi.png">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 searchFilters">
+				<div class="col-sm-2">
+					<div class="button-group">
+						<button class="button is-checked masonry-button"><img src="img/gridisotope-chk.png"></button>
+						<button class="button list-button"><img src="img/listisotope-chk.png"></button>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="shuffle-button">
+						<button class="button ">shuffle</button>
+					</div>
+				</div>
+				<div class="col-sm-4">
+
+					<div id="filters" class="button-group">
+						<button class="button is-checked" data-filter="*">show all</button>
+						<button class="button" data-filter=".es">Spanish</button>
+						<button class="button" data-filter=".en">English</button>
+
+					</div>
+				</div>
+				<div class="col-sm-4">
+					
+						<input type="text" id="quicksearch" placeholder="Search" />
+					
+				</div>
+
+
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="msg-box">
+					Oops! No results found!
+				</div>
+				<div class="grid">
+
+					<!--				<div id="mainGrid" class="grid center-block">-->
+
+					<!--				</div>-->
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="main.js"></script>
+</body>
+
+</html>
