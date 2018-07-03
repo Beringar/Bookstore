@@ -22,10 +22,6 @@ $('.list-button').on('click', function () {
 	createGridElementsList(arrayBooks);
 });
 
-
-
-
-
 // debounce so filtering doesn't happen every millisecond
 function debounce(fn, threshold) {
 	var timeout;
@@ -167,15 +163,6 @@ function createGridElementsList(arrayBooks) {
 	});
 
 	// init Isotope
-	//	var $grid = $('.grid').isotope({
-	//		itemSelector: '.grid-item',
-	//		
-	//	});
-
-
-
-
-	// init Isotope
 	var $grid = $('.grid').isotope({
 		itemSelector: '.grid-itemList',
 		layoutMode: 'vertical',
@@ -190,18 +177,12 @@ function createGridElementsList(arrayBooks) {
 			return searchResult && buttonResult;
 		}
 	});
-	// layout Isotope after each image loads
-	//$grid.imagesLoaded().progress( function() {
-	//  $grid.isotope('layout');
-	//});  
 
 
 	$('#filters').on('click', 'button', function () {
 		buttonFilter = $(this).attr('data-filter');
 		$grid.isotope();
 	});
-
-
 
 	// use value of search field to filter
 	var $quicksearch = $('#quicksearch').keyup(debounce(function () {
@@ -228,18 +209,4 @@ function createGridElementsList(arrayBooks) {
 		$grid.isotope('shuffle');
 	});
 
-	//	$('.bookElement').hover(function () {
-	//
-	//		if (!this.classList.contains('on')) {
-	//			this.classList.remove('off');
-	//			this.classList.add('on');
-	//		} else {
-	//			this.classList.remove('on');
-	//			this.classList.add('off');
-	//		}
-	//
-	//	});
-	//		weatherInfo = "<div class='weatherInfo'><h3 class='titleCityBack'>" + globaldata[i].city.name + "</h3><h5>Temperature: " + globaldata[i].list[x].main.temp + "&deg;" + "<br>min. " + globaldata[i].list[x].main.temp_min + "&deg; - max. " + globaldata[i].list[x].main.temp_max + "&deg;<br>Humidity: " + globaldata[i].list[x].main.humidity + "%</h5><h4>" + globaldata[i].list[x].weather[0].description + "</h4></div>"
-	//
-	//		parentElementBack.insertAdjacentHTML("beforeend", weatherInfo);
 }
