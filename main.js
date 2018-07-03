@@ -127,24 +127,6 @@ function createGridElements(arrayBooks) {
 	$('.shuffle-button').on('click', function () {
 		$grid.isotope('shuffle');
 	});
-
-
-
-
-	//	$('.bookElement').hover(function () {
-	//
-	//		if (!this.classList.contains('on')) {
-	//			this.classList.remove('off');
-	//			this.classList.add('on');
-	//		} else {
-	//			this.classList.remove('on');
-	//			this.classList.add('off');
-	//		}
-	//
-	//	});
-	//		weatherInfo = "<div class='weatherInfo'><h3 class='titleCityBack'>" + globaldata[i].city.name + "</h3><h5>Temperature: " + globaldata[i].list[x].main.temp + "&deg;" + "<br>min. " + globaldata[i].list[x].main.temp_min + "&deg; - max. " + globaldata[i].list[x].main.temp_max + "&deg;<br>Humidity: " + globaldata[i].list[x].main.humidity + "%</h5><h4>" + globaldata[i].list[x].weather[0].description + "</h4></div>"
-	//
-	//		parentElementBack.insertAdjacentHTML("beforeend", weatherInfo);
 }
 
 function createGridElementsList(arrayBooks) {
