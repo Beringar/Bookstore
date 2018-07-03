@@ -44,7 +44,7 @@ function debounce(fn, threshold) {
 
 
 function callApiBooks() {
-	var url = 'https://api.myjson.com/bins/udbm5';
+	var url = 'https://api.myjson.com/bins/1h3vb3';
 	$.ajax({ // OUR AJAX CALL and LOADING PROGRESS BAR
 		type: 'GET',
 		url: url,
